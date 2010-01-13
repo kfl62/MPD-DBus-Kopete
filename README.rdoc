@@ -2,14 +2,16 @@
 
 Once, long ago, {Kopete}[http://kopete.kde.org/] has support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki], but only has {(until it is not known)}[https://bugs.kde.org/show_bug.cgi?id=139563] but quite frustrating ...
 
-{Kopete}[http://kopete.kde.org/] is connected to dbus, so the problem reduces to send the information to the right address in dbus, but unfortunately, as in the {discussion}[http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0], {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] has no (and will not have one) support for dbus.
+{Kopete}[http://kopete.kde.org/] is connected to dbus, so the problem reduces to send the information to the right address in dbus, but unfortunately, as in the {discussion}[http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0], {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] has no (and will not have) support for dbus.
 
 In conclusion, in order to share with your friends what are you listening, requires dbus support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] and a communication interface with Kopete's dbus.
 
-After a long session in the Google search (my friend), I found some articles (see Resources) and I wrote MPD-DBus-Kopete
-
+After a long session in the Google search (my friend), I found some articles (see Resources) and I start to write MPD-DBus-Kopete
 
 ==  Helpful resources:
-1.) {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
-2.) {Ruby D-Bus tutorial}[http://trac.luon.net/data/ruby-dbus/tutorial/index.html]
-3.) Of course the {github}[http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1]
+  1.) {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
+  2.) {Ruby D-Bus tutorial}[http://trac.luon.net/data/ruby-dbus/tutorial/index.html]
+  3.) Of course the {github}[http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1]
+
+== License
+Kopete NowPaying MPD is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
