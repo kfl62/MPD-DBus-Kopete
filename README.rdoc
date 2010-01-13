@@ -9,9 +9,9 @@ In conclusion, in order to share with your friends what are you listening, requi
 After a long session in the Google search (my friend), I found some articles (see Resources) and I start to write MPD-DBus-Kopete
 
 ==  Helpful resources:
-  1.) {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
-  2.) {Ruby D-Bus tutorial}[http://trac.luon.net/data/ruby-dbus/tutorial/index.html]
-  3.) Of course the {github}[http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1]
+1. {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
+2. {Ruby D-Bus tutorial}[http://trac.luon.net/data/ruby-dbus/tutorial/index.html]
+3. Of course the {github}[http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1]
 
 == License
 Kopete NowPaying MPD is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
