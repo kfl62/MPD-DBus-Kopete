@@ -15,6 +15,13 @@ After a long session in the Google search (my friend), I found some articles (se
 * libmpd for Ruby ( use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks )
 
   Note:
+    I added the librmpd2 as submodule
+
+    git submodule add git://github.com/jeffayle/librmpd2.git lib/librmpd2
+
+    if you choose an other install path remember to change the require path
+    in mpd_dbus.rb
+
     The ruby-dbus libraries regardless of their version gives me some warnings.
     Finally I installed the openSuse's rpm version (unpack the rpm and copy all
     what you need in your ruby directory)
