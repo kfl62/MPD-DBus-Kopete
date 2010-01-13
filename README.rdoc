@@ -13,11 +13,11 @@ After a long session in the Google search (my friend), I found some articles (se
 * Ruby 1.8 (>= 1.8.7)
 * Ruby D-Bus ( {most active fork}[http://github.com/mvidner/ruby-dbus] )
 * libmpd for Ruby ( use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks )
-
   Note:
     The ruby-dbus libraries regardless of their version gives me some warnings.
-    Finally I installed the [openSuse's rpm]{http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/devel_languages_ruby_openSUSE_11.2/i586/ruby-dbus-0.2.11-1.1.i586.rpm] version (unpack the rpm and copy all
+    Finally I installed the openSuse's rpm version (unpack the rpm and copy all
     what you need in your ruby directory)
+* Ruby D-Bus [openSuse's rpm]{http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/devel_languages_ruby_openSUSE_11.2/i586/ruby-dbus-0.2.11-1.1.i586.rpm]
 
 ==  Helpful resources:
 1. {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
