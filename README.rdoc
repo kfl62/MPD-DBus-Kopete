@@ -1,12 +1,12 @@
 ==  Kopete NowPaying MPD
 
-Once, long ago, {Kopete}[http://kopete.kde.org/] has support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki], but only has {(until it is not known)}[https://bugs.kde.org/show_bug.cgi?id=139563] but quite frustrating ...
+Once, long ago, {Kopete}[http://kopete.kde.org/] had support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki], but as it'seen, not anymore {(until when it is not known)}[https://bugs.kde.org/show_bug.cgi?id=139563] quite frustrating but...
 
-{Kopete}[http://kopete.kde.org/] is connected to dbus, so the problem reduces to send the information to the right address in dbus, but unfortunately, as in the {discussion}[http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0], {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] has no (and will not have) support for dbus.
+{Kopete}[http://kopete.kde.org/] is connected to dbus, so the problem is reduced to sending the information to the right address in dbus, unfortunately, as it is in the {discussion}[http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0], {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] has no (and will not have any) support for dbus.
 
-In conclusion, in order to share with your friends what are you listening, requires dbus support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] and a communication interface with Kopete's dbus.
+In conclusion, in order to share with your friends what you are listening too, dbus support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] is required, also a communication interface with Kopete's dbus.
 
-After a long session in the Google search (my friend), I found some articles (see Resources) and I start to write MPD-DBus-Kopete
+After a long session in the Google search (my friend), I found some articles (see Resources) and I wrote MPD-DBus-Kopete
 
 == Requirements
 
@@ -19,12 +19,12 @@ After a long session in the Google search (my friend), I found some articles (se
 
     git submodule add git://github.com/jeffayle/librmpd2.git lib/librmpd2
 
-    if you choose an other install path remember to change the require path
+    if you choose an other install path remember to change the required path
     in mpd_dbus.rb
 
-    The ruby-dbus libraries regardless of their version gives me some warnings.
+    The ruby-dbus libraries regardless of their version give me some warnings.
     Finally I installed the openSuse's rpm version (unpack the rpm and copy all
-    what you need in your ruby directory)
+    you need in your ruby directory)
 
 * Ruby D-Bus {openSuse's rpm}[http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/devel_languages_ruby_openSUSE_11.2/i586/ruby-dbus-0.2.11-1.1.i586.rpm]
 
