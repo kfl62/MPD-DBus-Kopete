@@ -8,6 +8,12 @@ In conclusion, in order to share with your friends what are you listening, requi
 
 After a long session in the Google search (my friend), I found some articles (see Resources) and I start to write MPD-DBus-Kopete
 
+== Requirements
+
+ * Ruby 1.8 (>= 1.8.7)
+ * Ruby D-Bus ({most active fork}[http://github.com/mvidner/ruby-dbus]
+ * libmpd for Ruby (use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks
+
 ==  Helpful resources:
 1. {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
 2. {Ruby D-Bus tutorial}[http://trac.luon.net/data/ruby-dbus/tutorial/index.html]
