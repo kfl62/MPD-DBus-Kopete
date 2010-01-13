@@ -10,9 +10,9 @@ After a long session in the Google search (my friend), I found some articles (se
 
 == Requirements
 
- * Ruby 1.8 (>= 1.8.7)
- * Ruby D-Bus ({most active fork}[http://github.com/mvidner/ruby-dbus]
- * libmpd for Ruby (use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks
+* Ruby 1.8 (>= 1.8.7)
+* Ruby D-Bus ({most active fork}[http://github.com/mvidner/ruby-dbus]
+* libmpd for Ruby (use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks
 
 ==  Helpful resources:
 1. {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]
