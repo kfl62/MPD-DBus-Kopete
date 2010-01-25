@@ -1,4 +1,4 @@
-==  Kopete NowPaying MPD
+==  Kopete NowPlaying MPD
 
 Once, long ago, {Kopete}[http://kopete.kde.org/] had support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki], but as it'seen, not anymore {(until when it is not known)}[https://bugs.kde.org/show_bug.cgi?id=139563] quite frustrating but...
 
