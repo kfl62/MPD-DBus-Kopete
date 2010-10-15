@@ -3,13 +3,14 @@
 =begin
 Some description here
 =end
-
 require "dbus"
 require "logger"
 require "thread"
-require "./config"
-Dir['lib/*.rb'].each do |required|
-  required = File.join('.',required)
+# ugly hack to handle symbolic links
+require 'pathname'
+APP_ROOT = File.dirname(Pathname.new(__FILE__).realpath)
+require "#{APP_ROOT}/config"
+Dir["#{APP_ROOT}/lib/*.rb"].each do |required|
   require "#{required}"
 end
 
