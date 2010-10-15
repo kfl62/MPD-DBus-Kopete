@@ -4,29 +4,15 @@ Once, long ago, {Kopete}[http://kopete.kde.org/] had support for {MPD}[http://mp
 
 {Kopete}[http://kopete.kde.org/] is connected to dbus, so the problem is reduced to sending the information to the right address in dbus, unfortunately, as it is in the {discussion}[http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0], {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] has no (and will not have any) support for dbus.
 
-In conclusion, in order to share with your friends what you are listening too, dbus support for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] is required, also a communication interface with Kopete's dbus.
+In conclusion, in order to share with your friends what you are listening too, a communication interface is required for {MPD}[http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki] with Kopete's dbus.
 
 After a long session in the Google search (my friend), I found some articles (see Resources) and I wrote MPD-DBus-Kopete
 
 == Requirements
 
-* Ruby 1.8 (>= 1.8.7)
+* Ruby 1.9.2 
 * Ruby D-Bus ( {most active fork}[http://github.com/mvidner/ruby-dbus] )
 * libmpd for Ruby ( use {this}[http://github.com/jeffayle/librmpd2/], it's actualized and with callbacks )
-
-  Note:
-    I added the librmpd2 as submodule
-
-    git submodule add git://github.com/jeffayle/librmpd2.git lib/librmpd2
-
-    if you choose an other install path remember to change the required path
-    in mpd_dbus.rb
-
-    The ruby-dbus libraries regardless of their version give me some warnings.
-    Finally I installed the openSuse's rpm version (unpack the rpm and copy all
-    you need in your ruby directory)
-
-* Ruby D-Bus {openSuse's rpm}[http://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/devel_languages_ruby_openSUSE_11.2/i586/ruby-dbus-0.2.11-1.1.i586.rpm]
 
 ==  Helpful resources:
 1. {D-Bus tutorial}[http://dbus.freedesktop.org/doc/dbus-tutorial.html]

@@ -1,3 +1,0 @@
-[submodule "lib/librmpd2"]
-	path = lib/librmpd2
-	url = git://github.com/jeffayle/librmpd2.git

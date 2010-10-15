@@ -1,0 +1,30 @@
+#!/usr/bin/env ruby
+# encoding utf-8
+=begin
+Some description here
+=end
+
+require "dbus"
+require "logger"
+require "thread"
+require "./config"
+Dir['lib/*.rb'].each do |required|
+  required = File.join('.',required)
+  require "#{required}"
+end
+
+class Mpd2Kopete < SimpleDaemon::Base
+  @m = MpdHandler.new
+
+  def self.start
+    @m.start
+  end
+
+  def self.stop
+    @m.stop
+  end
+end
+
+Mpd2Kopete.daemonize
+
+#vim set ft=ruby
