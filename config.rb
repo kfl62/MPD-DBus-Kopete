@@ -7,6 +7,6 @@ CfgHandler = OpenStruct.new(
   :log_path   => "mpd_history.log",
   :log_only   => false,
   :daemon_pid => "mpd2kopete.pid",
-  :daemon_log => "mpd2kopete.log"
+  :daemon_log => "mpd2kopete_daemon.log"
 )
 
