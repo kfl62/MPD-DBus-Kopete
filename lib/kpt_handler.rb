@@ -15,11 +15,14 @@ module KptHandler
       i = o["org.kde.Kopete"]
       i.setStatusMessage msg
     end
+    rescue Exception => e
+      set_log_message(e.message)
   end
 
-  def set_log_message
-    retval = " - StatusMessage updated"
-    retval = " - KopeteError 'not running'" unless is_running?
+  def set_log_message(msg=nil)
+    retval = " - KopeteOK"
+    retval = " - KopeteOff" unless is_running?
+    retval = " - KopeteError '#{msg}'" unless msg.nil?
     return retval
   end
 
