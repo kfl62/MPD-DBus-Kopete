@@ -30,6 +30,7 @@ So all merits are theirs :).
     TODO comming soon
 
 **Links**
+
 1. [API docs]
 
 **Helpful resources:**
