@@ -1,0 +1,51 @@
+#  Kopete NowPlaying MPD
+Once, long ago, [Kopete] had support for [MPD], but as it'seen, not anymore [(until when it is not known)][1] quite frustrating but...
+
+[Kopete] is connected to dbus, so the problem is reduced to sending the information to the right address in dbus, unfortunately, as it is in the [discussion], [MPD] has no (and will not have any) support for dbus.
+
+In conclusion, in order to share with your friends what you are listening too, a communication interface is required for [MPD] with Kopete's dbus.<br>
+After a long session in the Google search (my friend), I found some articles (see Resources) and I wrote MPD-DBus-Kopete.
+
+**Requirements**
+
+1. Ruby 1.9 mostly for encoding issues (Tested on 1.9.2.p0);
+2. Ruby D-Bus ( I use [most active fork][2] from GitHub);
+
+        git clone git://github.com/mvidner/ruby-dbus.git
+        cd ruby-dbus
+        rake gem
+        rvm gem install|gem install|sudo gem install pkg/ruby-dbus-version.gem
+
+*Note: Embedded libraries*<br>
+1. librmpd2 library which handles [MPD] related stuff, comes from [Jeffrey Aylesworth's rMPD][3], without any modifications;<br>
+2. simple-daemon library, is borrowed from [Bryan Liles's simple-daemon][4], slightly modified to suit specific needs;<br>
+So all merits are theirs :).
+
+**Install**
+
+    TODO comming soon
+
+**Usage**
+
+    TODO comming soon
+
+**Helpful resources:**
+
+1. [D-Bus tutorial]
+2. [Ruby D-Bus tutorial]
+3. Of course the [github]
+
+**License**
+
+Kopete NowPaying MPD is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
+
+[Kopete]: http://kopete.kde.org/ "Kopete"
+[MPD]: http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki "Music Player Daemon"
+[1]: https://bugs.kde.org/show_bug.cgi?id=139563 "Some bug"
+[discussion]: http://www.musicpd.org/forum/index.php?action=printpage;topic=570.0 "Forum discussion"
+[2]: http://github.com/mvidner/ruby-dbus "Martin Vidner"
+[3]: http://github.com/jeffayle/rMPD/blob/master/librmpd.rb "Jeffrey Aylesworth"
+[4]: http://github.com/bryanl/simple-daemon "Bryan Liles"
+[D-Bus tutorial]: http://dbus.freedesktop.org/doc/dbus-tutorial.html
+[Ruby D-Bus tutorial]: http://trac.luon.net/data/ruby-dbus/tutorial/index.html
+[github]: http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1
