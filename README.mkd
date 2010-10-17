@@ -44,7 +44,7 @@ More info in API docs(check the link bellow).
 
 **Links**
 
-1. [API docs] - quite easy to maintain thanks to [RubyDoc Info])
+1. [API docs] - quite easy to maintain thanks to [RubyDoc Info].
 
 **Helpful resources:**
 
