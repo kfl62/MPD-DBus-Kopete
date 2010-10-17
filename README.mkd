@@ -9,7 +9,7 @@ After a long session in the Google search (my friend), I found some articles (se
 **Requirements**
 
 1. Ruby 1.9 mostly for encoding issues (Tested on 1.9.2.p0);
-2. Ruby D-Bus ( I use [most active fork][2] from GitHub);
+2. Ruby D-Bus ( I use [most active fork][2] from GitHub) there is no gem provided on <http://rubygems.org> but you can:
 
         git clone git://github.com/mvidner/ruby-dbus.git
         cd ruby-dbus
