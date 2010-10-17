@@ -16,11 +16,16 @@ After a long session in the Google search (my friend), I found some articles (se
         rake gem
         rvm gem install|gem install|sudo gem install pkg/ruby-dbus-version.gem
 
+    or download the [tarball from there][2] and follow steps as advised on download page.
+
 *Note: Embedded libraries*<br>
 1. librmpd2 library which handles [MPD] related stuff, comes from [Jeffrey Aylesworth's rMPD][3], without any modifications;<br>
 2. simple-daemon library, is borrowed from [Bryan Liles's simple-daemon][4], slightly modified to suit specific needs;<br>
 So all merits are theirs :).
 
+*Note: 1.8.7 support*<br>
+I made some changes regarding compatibility with Ruby 1.8.7, now you can use it, but **warning** you may have strange behavior caused by lack of encoding support on this version. You just been warned, it is your choice...
+ 
 **Install**
 
 First of all, since most of Linux distributions comes with Ruby 1.8.7, you need to install the newer Ruby version. I strongly recommend to do this using [Ruby Version Manager (RVM)][5].<br>

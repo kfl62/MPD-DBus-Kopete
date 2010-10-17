@@ -3,6 +3,7 @@
 =begin
 Some description here
 =end
+require "rubygems" if RUBY_VERSION.include?("1.8")
 require "dbus"
 require "logger"
 require "thread"

@@ -33,10 +33,9 @@ module MsgHandler
         title, artist = song.title.match(/(.*)\((.*)\)/).captures
       end
       msg = message(title,artist,stream)
-    when /Paprika|EuropaFM|Sláger/
-      msg = song.name
     else
       msg = "...?..."
+      msg = song.name unless song.name.nil? || song.name.empty?
     end
     return msg
   end
@@ -50,6 +49,7 @@ module MsgHandler
   def message(title,artist,album,date=nil)
     title = title.titleize.strip
     artist = artist.titleize.strip
+    album = album.strip
     msg = [title,"by",artist,"on",album,date].join(" ")
   end
 
