@@ -15,8 +15,8 @@ module KptHandler
       i = o["org.kde.Kopete"]
       i.setStatusMessage msg
     end
-    rescue Exception => e
-      set_log_message(e.message)
+    rescue => e
+      set_log_message(e)
   end
 
   def set_log_message(msg=nil)
