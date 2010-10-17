@@ -6,7 +6,8 @@ class MpdHandler
 
   def initialize
     @mpd = MPD.new
-    @mpd.register_callback( self.method('song_cb'), MPD::CURRENT_SONG_CALLBACK )
+    @mpd.register_callback(self.method('song_cb'), MPD::CURRENT_SONG_CALLBACK)
+    @mpd.register_callback(self.method('state_cb'), MPD::STATE_CALLBACK)
     log_path = File.join(CfgHandler.base_dir,CfgHandler.log_path) rescue $stdout
     @log = History.new(log_path)
   end
@@ -25,11 +26,24 @@ class MpdHandler
   end
 
   def song_cb(current)
-    msg = beutify(current)
-    set_status_message(msg) unless CfgHandler.log_only
-    msg += set_log_message
-    is_running? ? @log.info(msg) : @log.warn(msg)  if@log.log?
+    if current
+      msg = beutify(current)
+      unless msg.include?("...?...")
+        set_status_message(msg) unless CfgHandler.log_only
+      end
+      msg += set_log_message
+      is_running? ? @log.info(msg) : @log.warn(msg)  if@log.log?
+    else
+      set_status_message("Listening to nothing, just working...") unless CfgHandler.log_only
+      @log.error("MPD is running, but not playing...")
+    end
   end
-
+  
+  def state_cb(state)
+    if state == "stop"
+      set_status_message("Listening to nothing, just working...") unless CfgHandler.log_only
+      @log.info("MPD is running, but stopped...")
+    end
+  end
 end
 
