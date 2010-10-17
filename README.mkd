@@ -16,7 +16,7 @@ After a long session in the Google search (my friend), I found some articles (se
         rake gem
         rvm gem install|gem install|sudo gem install pkg/ruby-dbus-version.gem
 
-    or download the [tarball from there][2] and follow steps as advised on download page.
+    or download the [tarball from here][2] and follow steps as advised on download page.
 
 *Note: Embedded libraries*<br>
 1. librmpd2 library which handles [MPD] related stuff, comes from [Jeffrey Aylesworth's rMPD][3], without any modifications;<br>
