@@ -25,6 +25,8 @@ So all merits are theirs :).
 
 First of all, since most of Linux distributions comes with Ruby 1.8.7, you need to install the newer Ruby version. I strongly recommend to do this using [Ruby Version Manager (RVM)][5].<br>
 At this moment, and in near future, there is no gem install, so `cd` in your prefered location and `git clone git://github.com/kfl62/MPD-DBus-Kopete.git`, after this you may `cd MPD-DBus-Kopete && ln -s mpd2kopete ~/bin/mpd2kopete`<br>
+You can also [Download tar.gz] or [Download zip], if you don't want to bother with version controll.
+
 By default, the runtime and log files will be placed in `~/.mpd2kopete`, which for, before first run, you need to `mkdir ~/.mpd2kopete` (to change defaults edit `config.rb`).<br>
 That is all :)
 
@@ -78,6 +80,8 @@ Kopete NowPaying MPD is free software; you can redistribute it and/or modify it 
 [3]: http://github.com/jeffayle/rMPD/blob/master/librmpd.rb "Jeffrey Aylesworth"
 [4]: http://github.com/bryanl/simple-daemon "Bryan Liles"
 [5]: http://rvm.beginrescueend.com/
+[Download tar.gz]: http://github.com/kfl62/MPD-DBus-Kopete/tarball/master
+[Download zip]: http://github.com/kfl62/MPD-DBus-Kopete/zipball/master
 [API docs]: http://rubydoc.info/github/kfl62/MPD-DBus-Kopete/master/frames
 [RubyDoc Info]: http://rubydoc.info
 [D-Bus tutorial]: http://dbus.freedesktop.org/doc/dbus-tutorial.html
