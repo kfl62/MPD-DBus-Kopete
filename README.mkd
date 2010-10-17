@@ -44,7 +44,7 @@ More info in API docs(check the link bellow).
 
 **Links**
 
-1. [API docs]
+1. [API docs] - quite easy to maintain thanks to [RubyDoc Info])
 
 **Helpful resources:**
 
@@ -65,6 +65,7 @@ Kopete NowPaying MPD is free software; you can redistribute it and/or modify it 
 [4]: http://github.com/bryanl/simple-daemon "Bryan Liles"
 [5]: http://rvm.beginrescueend.com/
 [API docs]: http://rubydoc.info/github/kfl62/MPD-DBus-Kopete/master/frames
+[RubyDoc Info]: http://rubydoc.info
 [D-Bus tutorial]: http://dbus.freedesktop.org/doc/dbus-tutorial.html
 [Ruby D-Bus tutorial]: http://trac.luon.net/data/ruby-dbus/tutorial/index.html
 [github]: http://github.com/search?type=Everything&language=rb&q=dbus&repo=&langOverride=&x=21&y=16&start_value=1
