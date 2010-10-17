@@ -11,7 +11,6 @@ module MsgHandler
   end
 
   def stream(song)
-    msg = "...?.." if song.name.nil?
     case song.name
     when /More Fm/
       stream = "More Fm"
@@ -20,12 +19,20 @@ module MsgHandler
       msg = message(title,artist,stream)
     when /Retro Radio Csikszereda/
       stream = "Retro Radio"
-      artist, title = song.title.split(" - ")
+      if song.title.nil? || song.title.empty?
+        title = artist = "...?..."
+      else
+        artist, title = song.title.split(" - ")
+      end
       msg = message(title,artist,stream)
     when /ProFM/
       stream = song.name
-      title, artist = song.title.match(/(.*)\((.*)\)/).captures
-      msg = message(title.titleize,artist.titleize,stream)
+      if song.title.nil? || song.title.empty?
+        title = artist = "...?..."
+      else
+        title, artist = song.title.match(/(.*)\((.*)\)/).captures
+      end
+      msg = message(title,artist,stream)
     when /Paprika|EuropaFM|Sláger/
       msg = song.name
     else
@@ -35,15 +42,15 @@ module MsgHandler
   end
 
   def album(song)
-    return "album"
+    date = "~#{song.date}~" || nil
+    msg = message(song.title,song.artist,song.album,date)
+    return msg
   end
 
-  def message(title,artist,album)
-    begin
-      msg = [title,"by",artist,"on",album].join(" ")
-    rescue Exception => e
-      msg = "...?... Some error -> '#{e.message}'"
-    end
+  def message(title,artist,album,date=nil)
+    title = title.titleize.strip
+    artist = artist.titleize.strip
+    msg = [title,"by",artist,"on",album,date].join(" ")
   end
 
 end
