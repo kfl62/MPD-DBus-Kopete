@@ -40,7 +40,21 @@ There is no `force-restart` option, so if you forgotten to stop the deamon befor
 The daemon's logs and mpd history are placed in two separate file. You may consult them `tail [-f] mpd2kopete_daemon.log` or `tail [-f] mpd_history.log`.<br>
 As I mentioned before the default options are set in `~/install_dir/config.rb`<br>
 
-More info in API docs(check the link bellow).
+More info in API docs(check the Links bellow).
+
+**can_handle?**
+
+**true**
+    
+    TODO description of features
+
+**false**
+
+    TODO enumerate what will never do 
+
+**maybe**
+
+    TODO enumerate planned features
 
 **Links**
 
