@@ -25,7 +25,7 @@ So all merits are theirs :).
 
 First of all, since most of Linux distributions comes with Ruby 1.8.7, you need to install the newer Ruby version. I strongly recommend to do this using [Ruby Version Manager (RVM)][5].<br>
 At this moment, and in near future, there is no gem install, so `cd` in your prefered location and `git clone git://github.com/kfl62/MPD-DBus-Kopete.git`, after this you may `cd MPD-DBus-Kopete && ln -s mpd2kopete ~/bin/mpd2kopete`<br>
-By default the runtime and log files will be placed in `~/.mpd2kopete` which for before first run you need to `mkdir ~/.mpd2kopete` (to change defaults edit `config.rb`).<br>
+By default, the runtime and log files will be placed in `~/.mpd2kopete`, which for, before first run, you need to `mkdir ~/.mpd2kopete` (to change defaults edit `config.rb`).<br>
 That is all :)
 
 **Usage**
