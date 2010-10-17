@@ -30,7 +30,17 @@ That is all :)
 
 **Usage**
 
-    TODO comming soon
+**Good to know:** The shebang in `mpd2kopete` executable looks like `#!/usr/bin/env ruby`, so if the freshly installed/existing Ruby 1.9.2 is not your default, you need to `rvm use 1.9.2`, before any attempt to start daemon!
+
+- for start logging and setting the [Kopete]'s status message => `mpd2kopete start` :);<br>
+- for stop => `mpd2kopete stop`;
+- `mpd2kopete restart` well... as you guess :) will restart the daemon.
+
+There is no `force-restart` option, so if you forgotten to stop the deamon before logout, you need to manually remove the pid file `rm ~/.mpd2kopete/mpd2kopete.pid`, before a new start.<br>
+The daemon's logs and mpd history are placed in two separate file. You may consult them `tail [-f] mpd2kopete_daemon.log` or `tail [-f] mpd_history.log`.<br>
+As I mentioned before the default options are set in `~/install_dir/config.rb`<br>
+
+More info in API docs(check the link bellow).
 
 **Links**
 
