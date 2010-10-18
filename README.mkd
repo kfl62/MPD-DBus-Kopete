@@ -35,6 +35,8 @@ You can also [Download tar.gz] or [Download zip], if you don't want to bother wi
 By default, the runtime and log files will be placed in `~/.mpd2kopete`, which for, before first run, you need to `mkdir ~/.mpd2kopete` (to change defaults edit `config.rb`).<br>
 That is all :)
 
+I have no solution to start the daemon on login and stop it on logout. Posted a question on[stackoverflow](http://stackoverflow.com/q/3950585/374578), so for actualised info access the link.
+
 **Usage**
 
 **Good to know:** The shebang in `mpd2kopete` executable looks like `#!/usr/bin/env ruby`, so if the freshly installed/existing Ruby 1.9.2 is not your default, you need to `rvm use 1.9.2`, before any attempt to start daemon!
