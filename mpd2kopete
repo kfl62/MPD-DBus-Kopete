@@ -29,4 +29,4 @@ end
 
 Mpd2Kopete.daemonize
 
-#vim set ft=ruby
+# vim: set ft=ruby
