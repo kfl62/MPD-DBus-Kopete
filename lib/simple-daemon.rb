@@ -54,8 +54,8 @@ module SimpleDaemon
         STDERR.reopen STDOUT
         trap("TERM") {daemon.stop; exit}
         daemon.start
+        puts "Daemon started. pid => #{Process.pid}"
       end
-      puts "Daemon started."
     end
 
     def self.stop(daemon)
